@@ -1,0 +1,8 @@
+.vscode/
+virtual/
+__pycache__/
+env/
+*.pyc
+.env
+db.sqlite3
+.DS_STORE
