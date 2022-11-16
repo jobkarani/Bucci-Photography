@@ -49,17 +49,17 @@ footer {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Neucha', cursive;
+    font-family: 'Garamond', cursive;
     margin-left: 15px;
 }
 
 .changeFont {
-     font-family: 'Neucha', cursive;
+     font-family: 'Garamond', cursive;
      font-size: 25px
  }
  
 p, div {
-    font-family: 'Coming Soon', cursive;
+    font-family: 'Cormorant', cursive;
 }
 
 p {
@@ -135,4 +135,20 @@ fieldset[disabled] .btn-custom.active {
 }
 .item img{
     width: 40%;
+}
+
+.navv{
+    background-color: #607EAA;
+}
+
+#ul{
+    color: #F9F5EB;
+} 
+
+#dropdown{
+    background-color: #607EAA;
+}
+.cont{
+    background-color: #EAE3D2;
+    overflow-x: hidden;
 }

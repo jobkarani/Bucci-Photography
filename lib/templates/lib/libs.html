@@ -1,9 +1,9 @@
 {% extends 'lib/base.html' %}
-{% load staticfiles%}
+{% load static%}
 
 {% block content %}
 
-    <div id="carousel-example-generic" class="carousel-slide" data-ride="carousel">
+    <div id="carousel-example-generic" class="carousel-slide cont" data-ride="carousel">
 
         <!-- indicators -->
         <ol class="carousel-indicators">
@@ -38,7 +38,7 @@
         </a>
     </div>
 
-    <div class="container">
+    <div class="container-full cont">
         <div class="row">
             {% for libGroup in libGroups %}
                 <div class="col-md-6 libOptions">

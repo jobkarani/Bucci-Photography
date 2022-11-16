@@ -1,5 +1,4 @@
-<!-- {% load staticfiles %} -->
-{% load bootstrap3 %}
+{% load bootstrap4 %}
 {% load static %}
 
 <!DOCTYPE html>
@@ -21,7 +20,7 @@
   </head>
     
   <body>
-      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <nav class="navbar navbar-inverse navv navbar-fixed-top" role="navigation">
           <div class="container">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
@@ -38,44 +37,45 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav dropdownmenu">
                     <li class="dropdown">
-                        <a href="index.html" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-picture"></span> Gallery
+                        <a href="index.html" class="dropdown-toggle" id="ul"  data-toggle="dropdown"><span class="glyphicon glyphicon-picture"></span> Gallery
                             <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="{% url 'lib_detail' lib_title_slug='architecture' %}">Architecture</a></li>
-                            <li><a href="{% url 'lib_detail' lib_title_slug='scenaries' %}">Scenaries</a></li>
+                            <li><a href="{% url 'lib_detail' lib_title_slug='architecture' %}" id="ul">Architecture</a></li>
+                            <li><a href="{% url 'lib_detail' lib_title_slug='scenaries' %}" id="ul">Scenaries</a></li>
                         </ul> 
                     </li>
-                    <li>
-                        <a href="{% url 'aboutMe' %}" ><span class="glyphicon glyphicon-user"></span> About Me</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="index.html" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-picture"></span> Categories
+                    
+                    <li class="dropdown" id="dropdown">
+                        <a href="index.html" class="dropdown-toggle" id="ul" data-toggle="dropdown"><span class="glyphicon glyphicon-picture"></span> Categories
                             <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             {% for category in categories %}
-                            <li><a href="/category/{{ category.category_name }}">{{ category.category_name }}</a></li>
+                            <li><a href="/category/{{ category.category_name }}" id="ul">{{ category.category_name }}</a></li>
                             {% empty %}
                             <li>No such category</li>
                             {% endfor %}
                         </ul> 
                     </li>
                     <li class="dropdown">
-                        <a href="index.html" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-picture"></span> Locations
+                        <a href="index.html" class="dropdown-toggle" id="ul" data-toggle="dropdown"><span class="glyphicon glyphicon-picture"></span> Locations
                             <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             {% for location1 in location %}
-                            <li><a href="/location/{{location1.location_name}}">{{location1.location_name}}</a></li>
+                            <li><a href="/location/{{location1.location_name}}" id="ul">{{location1.location_name}}</a></li>
                             {% empty %}
                             <li>No such location</li>
                             {% endfor %}
                         </ul> 
                     </li>
-                    </ul>
+                    <li>
+                      <a href="{% url 'aboutMe' %}" id="ul" ><span class="glyphicon glyphicon-user"></span> About Me</a>
+                    </li>
+                  </ul>
                 </div><!-- /.navbar-collapse -->
             </div>
         </nav>
 
-        <div class="container">
+        <div class="container-full cont">
           <div class="row">
             <div class="col-md-12 text-center">
               <div class="overlay">
@@ -96,6 +96,7 @@
         </div>
         
       {% block content %}
+      
       {% endblock %}
     
       <!-- FOOTER -->

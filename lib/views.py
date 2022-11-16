@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, redirect, render_to_response
+from django.shortcuts import render, get_object_or_404, redirect, render
 from django.template.loader import render_to_string
 from django.views.decorators.csrf import csrf_exempt
 import json
@@ -74,7 +74,7 @@ def image_by_location(request, location):
     #     location = Location.objects.all()
     #     images_location = Image.get_image_by_location(location)
 
-    #     return render_to_response('lib/location.html', {'images_location':images_location, 'categories':categories,'location':location})
+    #     return render('lib/location.html', {'images_location':images_location, 'categories':categories,'location':location})
 
     # return redirect(all_images)
     images = Image.get_image_by_location(location)
@@ -89,7 +89,7 @@ def image_by_category(request, category):
     location = Location.objects.all()
     images_category = Image.get_image_by_category(category)
 
-    return render_to_response('lib/category.html',{'images_category':images_category, 'categories':categories,'location':location})
+    return render('lib/category.html',{'images_category':images_category, 'categories':categories,'location':location})
 
     # return redirect(all_images)
 
