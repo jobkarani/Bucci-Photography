@@ -7,7 +7,7 @@ cloudinary==1.29.0
 confusable-homoglyphs==3.2.0
 cryptography==37.0.4
 dj-database-url==0.5.0
-Django==3.2.9
+Django==3.2.16
 django-cors-headers==3.13.0
 django-crispy-forms==1.14.0
 django-daraja==1.2.0
