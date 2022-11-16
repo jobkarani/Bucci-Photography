@@ -1,7 +1,7 @@
 {% extends 'lib/base.html' %}
 
 {% block content %}
-<div class="container image-container">
+<div class="container-full image-container cont">
     {% for image in this_image %}
     <div class="row">
         <div class="col-md-6 col-sm-6 col-xs-12 col-lg-5">
@@ -13,15 +13,15 @@
           <blockquote id="caption-d">
             <ul>
               <label>NAME</label>
-              <li class="">{{ image.image_name }}</li>
+              <li class="ayub">{{ image.image_name }}</li>
               <label>DESCRIPTION</label>
-              <li class="">{{ image.image_description }}</li>
+              <li class="ayub">{{ image.image_description }}</li>
               <label>LOCATION TAKEN</label>
-              <li class="">{{ image.image_location.location_name }}</li>
+              <li class="ayub">{{ image.image_location.location_name }}</li>
               <label>CATEGORY</label>
-              <li class="">{{ image.image_category.category_name }}</li>
+              <li class="ayub">{{ image.image_category.category_name }}</li>
               <label>TIME-CREATED</label>
-              <li class="">{{ image.image_time_created }}</li>
+              <li class="ayub">{{ image.image_time_created }}</li>
             </ul>
           </blockquote>
         </div>

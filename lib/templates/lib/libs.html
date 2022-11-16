@@ -16,26 +16,29 @@
         <!-- Slider content (Wrapper for slides) -->
         <div class="carousel-inner">
             <div class="item active">
-                <img src="{% static 'images/1.jpeg' %}" alt="First slide">
+                <img src="https://matchthemes.com/demowp/gleam/wp-content/uploads/slider-2.jpg" alt="First slide">
             </div>
             <div class="item">
-                <img src="{% static 'images/2.jpeg' %}" alt="Second slide">
+                <img src="https://matchthemes.com/demowp/gleam/wp-content/uploads/slider-3.jpg" alt="Second slide">
             </div>
             <div class="item">
-                <img src="{% static 'images/3.jpeg' %}" alt="Third slide">
+                <img src="https://matchthemes.com/demowp/gleam/wp-content/uploads/slider-1.jpg" alt="Third slide">
             </div>
             <div class="item">
-                <img src="{% static 'images/4.jpeg' %}" alt="Fourth slide">
+                <img src="https://matchthemes.com/demowp/gleam/wp-content/uploads/slider-2.jpg" alt="Fourth slide">
             </div>
         </div>
 
         <!-- Controls -->
-        <a href="#carousel-example-generic" class="left carousel-control" data-slide="prev">
+        <!-- <a href="#carousel-example-generic" class="left carousel-control" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
         <a href="#carousel-example-generic" class="right carousel-control" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
+        </a> -->
+    </div>
+    <div class="para">
+      <h1>Bucci Photography</h1>
     </div>
 
     <div class="container-full cont">
@@ -52,44 +55,25 @@
         </div>
     </div>
 
-<!--    
+   
     {% if categories %}
       <div class="scroll-category">
         {% for category in categories %}
           <button class="btn btn-lg btn-primary category-button">{{ category.category_name }}</button>
         {% endfor %}
       </div>
-    {% endif %} -->
+    {% endif %}
 
     
-      <ul class="container-fluid ">
+      <ul class="container-fluid mt-4">
         {% for image in images %}
         <li class="col-md-4 col-sm-6 col-xs-12 col-lg-4">
           <div class="img-Img">
   
             <img src="{{ image.image_upload.cdn_url }}" class="img-responsive myImg" alt="{{image.image_name}}">
   
-            <a id="see-me" href="{% url 'photoDetails' image_id=image.id %}">see me
+            <a id="see-me" href="{% url 'photoDetails' image_id=image.id %}"> Details
               <span class="glyphicon glyphicon-eye-open"></span></a>
-  
-            <button id='btn-copy' data-info="{{request.get_host }}{{ image.image_upload.cdn_url}}" type="button" class="btn btn-info btn-xs">
-              <span class="popuptext" id="myPopup">Copied!</span>
-              <span class="glyphicon glyphicon-copy"></span>
-              copy link
-            </button>
-  
-            <button
-              id='details'
-              data-description='{{image.image_description}}'
-              data-location='{{image.image_location}}'
-              data-category='{{image.image_category}}'
-              data-created='{{image.image_time_created}}'
-              type="button"
-              class="btn btn-info btn-xs info-btn"
-              data-toggle="modal">
-              <span class="glyphicon glyphicon-info-sign"></span>
-              details
-            </button>
           </div>
   
           <div id="modal-details" class="modal">

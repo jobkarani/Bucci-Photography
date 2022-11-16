@@ -49,17 +49,16 @@ footer {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Garamond', cursive;
+    /* font-family: 'Garamond', cursive; */
     margin-left: 15px;
 }
 
 .changeFont {
-     font-family: 'Garamond', cursive;
      font-size: 25px
  }
  
 p, div {
-    font-family: 'Cormorant', cursive;
+    color: black;
 }
 
 p {
@@ -93,6 +92,7 @@ body {
 /* remove gradient background form carousel */
 .carousel-control.right, .carousel-control.left {
   background-image:none;
+  margin-top: 25%;
 }
 
 
@@ -101,7 +101,6 @@ body {
 .btn-custom {
   background-color: #3a0371;
   border-color: #3a0371;
-  font-family: 'Neucha', cursive;
 }
 .btn-custom:hover,
 .btn-custom:focus,
@@ -131,24 +130,52 @@ fieldset[disabled] .btn-custom.active {
 }
 
 .image-container{
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
+    padding:5%;
 }
 .item img{
-    width: 40%;
+    width: 100%;
 }
 
 .navv{
-    background-color: #607EAA;
+    background-color: #ffff;
 }
 
 #ul{
-    color: #F9F5EB;
+    color: #1B262C;
 } 
 
 #dropdown{
-    background-color: #607EAA;
+    background-color: #ffff;
+    /* background: rgba(228, 224, 224, 0.5); */
 }
 .cont{
-    background-color: #EAE3D2;
+    background-color: #ffff;
     overflow-x: hidden;
+}
+
+.ayub{
+    color: black;
+}
+
+label{
+    color: black;
+}
+
+.navbar-inverse{
+    border: none;
+}
+
+.contt{
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.foot{
+    color: #ffff;
+    font-size: small;
+}
+
+.contt .foot a{
+    color: #ffff;
 }
