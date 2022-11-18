@@ -28,17 +28,19 @@
                 <img src="https://matchthemes.com/demowp/gleam/wp-content/uploads/slider-2.jpg" alt="Fourth slide">
             </div>
         </div>
-
-        <!-- Controls -->
-        <!-- <a href="#carousel-example-generic" class="left carousel-control" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a href="#carousel-example-generic" class="right carousel-control" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a> -->
+        
     </div>
-    <div class="para">
-      <h1>Bucci Photography</h1>
+
+    <div id="para">
+      <p id="h1">Bucci Photography</p>
+      <p id="seeit">As You See It</p>
+    </div>
+
+    <div class="container-full cont mt">
+      <h2 class="text-center pass">PHOTOGRAPHY IS MY PASSION</h2>
+      <p class="text-center passion">The focus of my photographic passion is nature photography. An exciting field in which I deal with macro photography as well as animal and landscape photography. On my site I would like to give you an insight into this interesting subject area, but also my view of things.</p>
+      <p class="text-center passion">On long winter evenings or on days when, due to the weather, there is no fascinating motif to be found, I sometimes photograph people in my studio. But photographing water drops is particularly fascinating for me. An exciting topic, because what the eye cannot see, the camera catches. Be amazed when you see the water from a completely different perspective.</p>
+      <hr class="hr">
     </div>
 
     <div class="container-full cont">
@@ -55,55 +57,39 @@
         </div>
     </div>
 
-   
-    {% if categories %}
-      <div class="scroll-category">
-        {% for category in categories %}
-          <button class="btn btn-lg btn-primary category-button">{{ category.category_name }}</button>
-        {% endfor %}
+    <div class="container-full cont cat">
+      {% if categories %}
+        <div class="scroll-category">
+          {% for category in categories %}
+            <a href="/category/{{ category.category_name }}" class="btn btn-lg  category-button">{{ category.category_name }}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="container-fluid cont quotes">
+      <div id="carousel-example-generic" class="carousel-slide" data-ride="carousel">
+
+        <!-- Slider content (Wrapper for slides) -->
+        <div class="carousel-inner">
+            <div class="itemm item active">
+              <p class="text-center">“Photography is an austere and blazing poetry of the real.”</p>
+              <p class="text-right"> ~ Henri Cartier-Bresson</p>
+            </div>
+            <div class="itemm item">
+              <p class="text-center">“There is one thing the photo must contain: the humanity of the moment.”</p>
+              <p class="text-right"> ~ Robert Frank</p>
+            </div>
+            <div class="itemm item">
+              <p class="text-center">“A good snapshot keeps a moment that's gone from running away.”</p>
+              <p class="text-right"> ~ Eudora Welty</p>
+            </div>
+            <div class="itemm item">
+              <p class="text-center">“In the world of photography, you get to share a captured moment with other people.”</p>
+              <p class="text-right"> ~ James Wilson</p>
+            </div>
+        </div>
+        
       </div>
-    {% endif %}
-
-    
-      <ul class="container-fluid mt-4">
-        {% for image in images %}
-        <li class="col-md-4 col-sm-6 col-xs-12 col-lg-4">
-          <div class="img-Img">
-  
-            <img src="{{ image.image_upload.cdn_url }}" class="img-responsive myImg" alt="{{image.image_name}}">
-  
-            <a id="see-me" href="{% url 'photoDetails' image_id=image.id %}"> Details
-              <span class="glyphicon glyphicon-eye-open"></span></a>
-          </div>
-  
-          <div id="modal-details" class="modal">
-            <span class="close">&times;</span>
-            <div class="modal-content det-m"></div>
-            <blockquote id="caption-d">
-              <ul>
-                <label>DESCRIPTION</label>
-                <li class="one"></li>
-                <label>LOCATION TAKEN</label>
-                <li class="two"></li>
-                <label>CATEGORY</label>
-                <li class="three"></li>
-                <label>TIME-CREATED</label>
-                <li class="four"></li>
-              </ul>
-            </blockquote>
-  
-          </div>
-  
-          <div id="modal-img" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content img-m">
-            <div id="caption"></div>
-          </div>
-  
-        </li>
-  
-      {% endfor %} 
-      </ul>
-
-
+    </div>
 {% endblock content %}

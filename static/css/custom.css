@@ -1,5 +1,6 @@
 body {
     padding-top: 60px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    background-color: #292c2f!important;
 }
 
 .thumb {
@@ -55,6 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .changeFont {
      font-size: 25px
+     /* font-style: italic; */
  }
  
 p, div {
@@ -138,11 +140,13 @@ fieldset[disabled] .btn-custom.active {
 }
 
 .navv{
-    background-color: #ffff;
+    background-color: #191e23;
 }
 
 #ul{
-    color: #1B262C;
+    color: #fff;
+    font-size: larger;
+    font-weight: 300;
 } 
 
 #dropdown{
@@ -150,7 +154,7 @@ fieldset[disabled] .btn-custom.active {
     /* background: rgba(228, 224, 224, 0.5); */
 }
 .cont{
-    background-color: #ffff;
+    background-color: #292c2f;
     overflow-x: hidden;
 }
 
@@ -167,7 +171,7 @@ label{
 }
 
 .contt{
-    background-color: black;
+    background-color: #000000;
     overflow-x: hidden;
 }
 
@@ -178,4 +182,86 @@ label{
 
 .contt .foot a{
     color: #ffff;
+}
+
+#para{
+    position: absolute;
+    left: 25%;
+    bottom: 30%;
+}
+
+#h1{
+    font-size: 50px;
+    font-weight: 900;
+    /* font-style: oblique; */
+    letter-spacing: 10px;
+}
+
+#seeit{
+    margin-left: 35%;
+    margin-top: 10%;
+    font-size: 25px;
+    font-weight: 450;
+}
+
+#h1, #seeit{
+    color: #fff;
+}
+
+.passion{
+    margin-left: 15%;
+    margin-right: 15%;
+    letter-spacing: 1px;
+    color: #777777;
+}
+
+.pass{
+    color: #777777;
+}
+
+.mt{
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.hr{
+    margin-top: 4%;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: #000000;
+    font-weight: bolder; 
+}
+
+.cat{
+    margin-left: 30%;
+    margin-bottom: 5%;
+}
+
+.category-button{
+    background: rgba(228, 224, 224, 0.5);
+    color:black;
+    font-weight: 600;
+}
+
+.category-button:hover{
+    background: rgba(3, 138, 255, 0.9);
+    color: #fff;
+}
+
+.quotes{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #212326;
+}
+
+.itemm{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.itemm p{
+    color: #777777;
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: larger;
 }
