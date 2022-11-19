@@ -131,10 +131,6 @@ fieldset[disabled] .btn-custom.active {
     width: 100%;
 }
 
-.image-container{
-    /* margin-top: 4rem; */
-    padding:5%;
-}
 .item img{
     width: 100%;
 }
@@ -158,14 +154,6 @@ fieldset[disabled] .btn-custom.active {
 .cont{
     background-color: #292c2f;
     overflow-x: hidden;
-}
-
-.ayub{
-    color: black;
-}
-
-label{
-    color: black;
 }
 
 .navbar-inverse{
@@ -320,3 +308,36 @@ label{
  .deets{
     margin-top: 5%;
  }
+
+ .alert{
+    margin-top: 18%;
+    margin-left: 10%;
+    background-color: #292c2f;
+    border: none;
+ }
+
+ /* END OF CATEGORY PAGE  */
+
+ /* START OF IMAGE PAGE  */
+
+.imagee{
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+
+.textt{
+    margin-top: 10%;
+}
+
+label{
+    color: #777777;
+    font-size: x-large;
+}
+
+.ayub{
+    color: #777777;
+    font-size: larger;
+}
+
+/* END OF IMAGE PAGE  */

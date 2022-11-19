@@ -9,9 +9,6 @@
       <div class="img-Img">
         <img src="{{ image.image_upload.cdn_url }}" id="myImg" class="img-responsive myImg" alt="{{image.image_name}}">
         <div class="see">
-          <!-- <div class="name col-md-6">
-            <p id="text-white">{{ image.image_name }}</p>
-          </div> -->
           <div class="deets text-center">
             <a id="see-me" href="{% url 'photoDetails' image_id=image.id %}">View Details </a>
           </div>
@@ -19,6 +16,12 @@
       </div>
     </li>
   </ul>
+  
+  {% empty %}
+    <div class="alert alert-danger">
+      <h2>Ooops no images available for this category :)</h2>
+    </div>
   {% endfor %}
 </div>
+
 {% endblock content%}

@@ -1,16 +1,13 @@
 {% extends 'lib/base.html' %}
 
 {% block content %}
-<div class="container-full image-container cont">
+<div class="container-full cont">
     {% for image in this_image %}
-    <div class="row">
-        <div class="col-md-6 col-sm-6 col-xs-12 col-lg-5">
+    <div class="row imagee">
+        <div class="col-md-6">
           <img src="{{ image.image_upload.cdn_url }}" class="img-responsive myImg" alt="{{image.image_name}}">
         </div>
-    
-        <div class='col-md-6 col-sm-6 col-xs-12 col-lg-6'>
-    
-          <blockquote id="caption-d">
+        <div class='col-md-6 textt'>
             <ul>
               <label>NAME</label>
               <li class="ayub">{{ image.image_name }}</li>
@@ -23,7 +20,6 @@
               <label>TIME-CREATED</label>
               <li class="ayub">{{ image.image_time_created }}</li>
             </ul>
-          </blockquote>
         </div>
         {% empty %}
         <div class="alert alert-danger">

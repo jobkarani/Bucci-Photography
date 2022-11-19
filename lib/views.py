@@ -132,6 +132,7 @@ def image_by_category(request, category):
 
 def display_details(request,image_id):
     categories = Category.objects.all()
+    categories = Category.objects.all()
     location = Location.objects.all()
     this_image = Image.get_image_by_id(image_id)
 
