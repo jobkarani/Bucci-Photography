@@ -139,6 +139,8 @@ fieldset[disabled] .btn-custom.active {
     width: 100%;
 }
 
+ /* START OF LIB & BASE PAGES */
+
 .navv{
     background-color: #191e23;
 }
@@ -265,3 +267,56 @@ label{
     font-style: oblique;
     font-size: larger;
 }
+
+/* END OF LIB & BASE PAGES  */
+
+/* START OF CATEGORY PAGE  */
+
+.category{
+    margin-bottom: 5%;
+    overflow-x: hidden;
+    margin-left: 10%;
+}
+
+ ul li {
+    list-style-type: none;
+ }
+
+ .card{
+    width: 40%;
+    background-color: #212326;
+    margin-top: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 2%;
+ }
+
+ #myImg:hover{
+    background: rgba(3, 138, 255, 0.3);
+ }
+
+
+ #see-me{
+    color: #fff;
+    background: rgba(228, 224, 224, 0.2);
+    padding: 2%;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: larger;
+ }
+
+ #see-me:hover{
+    color: #fff;
+    background: rgba(3, 138, 255, 0.3);
+    padding: 2%;
+    border-radius: 10px;
+    text-decoration: none;
+ }
+
+ .deets{
+    margin-top: 5%;
+ }

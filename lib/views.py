@@ -12,7 +12,14 @@ def libs(request):
     location = Location.objects.all()
     images = Image.objects.all()
 
-    return render(request, 'lib/libs.html', {'libGroups': lib_groups, 'categories':categories, 'location':location, 'images':images})
+    context = {
+        'libGroups': lib_groups, 
+        'categories':categories, 
+        'location':location, 
+        'images':images
+        }
+
+    return render(request, 'lib/libs.html', context)
 
 
 def lib_detail(request, lib_title_slug):
@@ -49,14 +56,27 @@ def craft_detail(request, craft_id):
     except Technique.DoesNotExist:
         previous = None
 
-    return render(request, 'lib/craft_detail.html', {'technique':technique, 'next':next_technique, 'previous':previous, 'categories':categories,'location':location})
+    context = {
+        'technique':technique, 
+        'next':next_technique, 
+        'previous':previous, 
+        'categories':categories,
+        'location':location
+        }
+
+    return render(request, 'lib/craft_detail.html', context)
 
 
 def about_me(request):
     categories = Category.objects.all()
     location = Location.objects.all()
 
-    return render(request, 'lib/about_me.html', {'categories':categories,'location':location})
+    context = {
+        'categories':categories,
+        'location':location
+        }
+
+    return render(request, 'lib/about_me.html', context)
 
 
 def all_images(request):
@@ -64,7 +84,13 @@ def all_images(request):
     categories = Category.objects.all()
     location = Location.objects.all()
 
-    return render(request,'lib/libs.html',{'images':images,'categories':categories,'location':location})
+    context = {
+        'images':images,
+        'categories':categories,
+        'location':location
+        }
+
+    return render(request,'lib/libs.html',context)
 
 
 def image_by_location(request, location):
@@ -80,19 +106,28 @@ def image_by_location(request, location):
     images = Image.get_image_by_location(location)
     categories = Category.objects.all()
     location = Location.objects.all()
-    return render(request, 'lib/location.html', {'images_location':images, 'categories':categories,'location':location} )
+
+    context = {
+        'images_location':images, 
+        'categories':categories,
+        'location':location
+        }
+    return render(request, 'lib/location.html', context )
 
 def image_by_category(request, category):
-    # if request.method == "GET" and 'category_name' in request.GET and request.is_ajax():
-    #     category = request.GET['category_name']
+    if request.method == "GET" and 'category_name' in request.GET and request.is_ajax():
+        category = request.GET['category_name']
     categories = Category.objects.all()
     location = Location.objects.all()
     images_category = Image.get_image_by_category(category)
 
-    return render('lib/category.html',{'images_category':images_category, 'categories':categories,'location':location})
+    context = {
+        'images_category':images_category, 
+        'categories':categories,
+        'location':location
+        }
 
-    # return redirect(all_images)
-
+    return render(request, 'lib/category.html',context)
 
 
 def display_details(request,image_id):
@@ -100,7 +135,13 @@ def display_details(request,image_id):
     location = Location.objects.all()
     this_image = Image.get_image_by_id(image_id)
 
-    return render(request,'lib/image.html',{'this_image':this_image,'categories':categories,'location':location})
+    context = {
+        'this_image':this_image,
+        'categories':categories,
+        'location':location
+        }
+
+    return render(request,'lib/image.html',context)
 
 
 def search_image(request):
@@ -112,7 +153,19 @@ def search_image(request):
         images_result = Image.get_image_by_category(search_category)
         message = f'{search_category}'
 
-        return render(request,'lib/search.html',{'images_result':images_result,'message':message,'categories':categories,'location':location})
+        context = {
+            'images_result':images_result,
+            'message':message,
+            'categories':categories,
+            'location':location
+            }
+
+        return render(request,'lib/search.html',context)
 
     else:
-        return render(request,'lib/search.html',{'categories':categories,'location':location})
+
+        context = {
+            'categories':categories,
+            'location':location
+            }
+        return render(request,'lib/search.html',context)
