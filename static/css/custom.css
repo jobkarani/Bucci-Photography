@@ -244,6 +244,8 @@ fieldset[disabled] .btn-custom.active {
 }
 
 @media only screen and (max-width: 500px) {
+    /* search responsivity  */
+
     .search{
         margin-right: 20%;
         margin-left: 20%;
@@ -418,3 +420,21 @@ footer {
     font-size: x-large;
     margin-left: 2%;
 }
+
+@media only screen and (max-width: 500px) {
+    /* footer responsivity  */
+
+    .foot-logo{
+        margin-left: 30%;
+    }
+
+    .foot{
+        margin-left: 23%;
+    }
+
+    .icons{
+        text-align: center;
+    }
+}
+
+/* END OF FOOTER  */
