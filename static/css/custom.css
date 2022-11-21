@@ -202,6 +202,7 @@ fieldset[disabled] .btn-custom.active {
     margin-left: 15%;
     margin-right: 15%;
     letter-spacing: 1px;
+    line-height: 300%;
     color: #777777;
 }
 
@@ -340,4 +341,41 @@ label{
     font-size: larger;
 }
 
+.description{
+    line-height: 300%;
+}
+
 /* END OF IMAGE PAGE  */
+
+/* START OF ABOUT PAGE  */
+
+.dream{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: #fff;
+    font-size: 1.17em;
+    background-color: #36393d;
+    margin-left: -10%;
+}
+
+.profile-pic{
+    margin-left: 8%;
+    margin-top: 5%;
+}
+
+.me{
+    color: #ffff;
+    margin-left: 10%;
+}
+
+.pull{
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.abt{
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #777777;
+    line-height: 300%;
+}
