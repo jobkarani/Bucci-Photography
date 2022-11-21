@@ -376,6 +376,36 @@ fieldset[disabled] .btn-custom.active {
     border: none;
  }
 
+ @media only screen and (max-width: 500px) {
+    .category{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .card{
+        width: 90%;
+        margin-top: 10%;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .deets{
+        padding-top: 5%;
+        padding-bottom: 8%;
+    }
+
+    #see-me{
+        padding: 5%;
+        font-size: large;
+    }
+
+    #see-me:hover{
+        padding: 5%;
+        font-size: large;
+     }
+ }
+
  /* END OF CATEGORY PAGE  */
 
  /* START OF IMAGE PAGE  */
