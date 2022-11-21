@@ -169,7 +169,6 @@ fieldset[disabled] .btn-custom.active {
 #h1{
     font-size: 50px;
     font-weight: 900;
-    /* font-style: oblique; */
     letter-spacing: 10px;
 }
 
@@ -245,7 +244,6 @@ fieldset[disabled] .btn-custom.active {
 
 @media only screen and (max-width: 500px) {
     /* search responsivity  */
-
     .search{
         margin-right: 20%;
         margin-left: 20%;
@@ -259,6 +257,61 @@ fieldset[disabled] .btn-custom.active {
     .btn-search{
         margin-left: 83%;
         margin-top: -26%;
+    }
+
+    /* lib page responsivity */
+
+    .itemm{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .mt{
+        margin-top: 10%;
+    }
+
+    .pass{
+        font-size: larger;
+        font-weight: 900;
+        letter-spacing: normal;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .passion{
+        line-height: 150%;
+        font-size: large;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .hr{
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #para{
+        position: absolute;
+        left: 25%;
+        bottom: 60%;
+    }
+
+    #h1{
+        font-size: larger;
+        font-weight: 900;
+        font-style: normal;
+        letter-spacing: 1px;
+    }
+
+    #seeit{
+        font-size: large;
+        margin-left: 20%;
+    }
+
+    .carousel-indicators{
+        position: absolute;
+        bottom: 47%;
     }
 
 }
@@ -430,10 +483,16 @@ footer {
 
     .foot{
         margin-left: 23%;
+        margin-top: 3%;
     }
 
     .icons{
         text-align: center;
+        margin-top: 3%;
+    }
+
+    .contt{
+        padding-bottom: 5%;
     }
 }
 
