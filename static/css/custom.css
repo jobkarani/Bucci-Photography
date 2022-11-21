@@ -243,6 +243,24 @@ fieldset[disabled] .btn-custom.active {
     font-size: larger;
 }
 
+@media only screen and (max-width: 500px) {
+    .search{
+        margin-right: 20%;
+        margin-left: 20%;
+        margin-top: 5%;
+    }
+
+    #search{
+        width: 80%;
+    }
+
+    .btn-search{
+        margin-left: 83%;
+        margin-top: -26%;
+    }
+
+}
+
 /* END OF LIB & BASE PAGES  */
 
 /* START OF CATEGORY PAGE  */
