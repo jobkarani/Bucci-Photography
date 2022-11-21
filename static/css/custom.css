@@ -434,6 +434,22 @@ label{
     line-height: 300%;
 }
 
+@media only screen and (max-width: 500px) {
+    .imagee{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .textt{
+        margin-left: -10%;
+    }
+
+    .description{
+        line-height: normal;
+    }
+}
+
+
 /* END OF IMAGE PAGE  */
 
 /* START OF ABOUT PAGE  */
