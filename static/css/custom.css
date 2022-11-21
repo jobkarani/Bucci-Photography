@@ -39,11 +39,6 @@ body {
     margin-left: 20px;
 }
 
-footer {
-    margin: 50px 0;
-    padding: 15px;
-}
-
 /* move pics in carousel to center */
 .carousel-inner > .item > img {
     margin: 0 auto;
@@ -163,15 +158,6 @@ fieldset[disabled] .btn-custom.active {
 .contt{
     background-color: #000000;
     overflow-x: hidden;
-}
-
-.foot{
-    color: #ffff;
-    font-size: small;
-}
-
-.contt .foot a{
-    color: #ffff;
 }
 
 #para{
@@ -378,4 +364,39 @@ label{
     margin-right: 10%;
     color: #777777;
     line-height: 300%;
+}
+
+/* END OF ABOUT PAGE  */
+
+/* START OF FOOTER  */
+
+.foot-logo{
+    height: 10vh;
+
+}
+
+.foot{
+    color: #55585c;
+    font-size: small;
+}
+
+.contt .foot a{
+    color: #55585c;
+}
+
+footer {
+    margin-left: 5%;
+    margin-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+.icons{
+    text-align: right;
+}
+
+.icon{
+    color: #55585c;
+    font-size: x-large;
+    margin-left: 2%;
 }
