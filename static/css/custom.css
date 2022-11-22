@@ -49,8 +49,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 15px;
 }
 
+#loggo{
+    color: #607EAA;
+}
+
 .changeFont {
-     font-size: 25px
+     font-size: 25px;
+     font-weight: 900;
      /* font-style: italic; */
  }
  
@@ -160,10 +165,14 @@ fieldset[disabled] .btn-custom.active {
     overflow-x: hidden;
 }
 
+.carousel-indicators{
+    margin-bottom: -15%;
+}
+
 #para{
     position: absolute;
     left: 25%;
-    bottom: 30%;
+    bottom: 22%;
 }
 
 #h1{
@@ -209,11 +218,13 @@ fieldset[disabled] .btn-custom.active {
 }
 
 .cat{
-    margin-left: 30%;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-bottom: 5%;
 }
 
 .category-button{
+    margin-top: 3%;
     background: rgba(228, 224, 224, 0.5);
     color:black;
     font-weight: 600;
@@ -312,6 +323,15 @@ fieldset[disabled] .btn-custom.active {
     .carousel-indicators{
         position: absolute;
         bottom: 47%;
+    }
+
+    .cat{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .category-button{
+        margin-top: 3%;
     }
 
 }
