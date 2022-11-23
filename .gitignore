@@ -7,6 +7,6 @@ env/
 db.sqlite3
 .DS_STORE
 .vercel
-node_modules/
 media/
 staticfiles/
+node_modules/
