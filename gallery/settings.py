@@ -32,6 +32,11 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
 
+# ALLOWED_HOSTS = ['*']
+
+# ALLOWED_HOSTS = ['198.211.99.20', 'localhost', '127.0.0.1']
+
+
 UPLOADCARE = {  
     'pub_key': config('pub_key'),
     'secret': config('secret'),
