@@ -29,4 +29,4 @@ zipp==3.6.0
 gunicorn==20.1.0
 django-bootstrap-form==3.4
 django-bootstrap4==21.1
-pyuploadcare==3.1.0
+pyuploadcare==3.2.0
