@@ -330,6 +330,171 @@ fieldset[disabled] .btn-custom.active {
     .category-button{
         margin-top: 3%;
     }
+}
+
+@media only screen and (max-width: 768px) {
+    /* search responsivity  */
+    .search{
+        margin-right: 20%;
+        margin-left: 20%;
+        margin-top: 5%;
+    }
+
+    #search{
+        width: 80%;
+    }
+
+    .btn-search{
+        margin-left: 83%;
+        margin-top: -26%;
+    }
+
+    /* lib page responsivity */
+
+    .itemm{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .mt{
+        margin-top: 10%;
+    }
+
+    .pass{
+        font-size: larger;
+        font-weight: 900;
+        letter-spacing: normal;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .passion{
+        line-height: 150%;
+        font-size: large;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .hr{
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #para{
+        position: absolute;
+        left: 25%;
+        bottom: 60%;
+    }
+
+    #h1{
+        font-size: larger;
+        font-weight: 900;
+        font-style: normal;
+        letter-spacing: 1px;
+    }
+
+    #seeit{
+        font-size: large;
+        margin-left: 20%;
+    }
+
+    .carousel-indicators{
+        position: absolute;
+        bottom: 56%;
+    }
+
+    .cat{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .category-button{
+        margin-top: 3%;
+    }
+
+}
+
+@media only screen and (max-width: 830px) {
+    /* search responsivity  */
+    .search{
+        margin-right: 20%;
+        margin-left: 20%;
+        margin-top: 5%;
+    }
+
+    #search{
+        width: 80%;
+    }
+
+    .btn-search{
+        margin-left: 83%;
+        margin-top: -26%;
+    }
+
+    /* lib page responsivity */
+
+    .itemm{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .mt{
+        margin-top: 10%;
+    }
+
+    .pass{
+        font-size: larger;
+        font-weight: 900;
+        letter-spacing: normal;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .passion{
+        line-height: 150%;
+        font-size: large;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .hr{
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #para{
+        position: absolute;
+        left: 25%;
+        bottom: 60%;
+    }
+
+    #h1{
+        font-size: larger;
+        font-weight: 900;
+        font-style: normal;
+        letter-spacing: 1px;
+    }
+
+    #seeit{
+        font-size: large;
+        margin-left: 20%;
+    }
+
+    .carousel-indicators{
+        position: absolute;
+        bottom: 56%;
+    }
+
+    .cat{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .category-button{
+        margin-top: 3%;
+    }
 
 }
 

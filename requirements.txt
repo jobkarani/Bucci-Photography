@@ -13,7 +13,7 @@ django-on-heroku==1.1.2
 django-registration==3.3
 django-tinymce==3.4.0
 idna==3.4                                                                                                                                                                          
-psycopg2-binary==2.9.3
+psycopg2-binary==2.9.5
 pycodestyle==2.7.0
 pycparser==2.21
 python-decouple==3.5
