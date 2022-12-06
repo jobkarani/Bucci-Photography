@@ -645,8 +645,28 @@ label{
 }
 
 .profile-pic{
-    margin-left: 8%;
+    margin-left: 10%;
     margin-top: 5%;
+}
+
+@media only screen and (max-width:500px ) {
+    .profile-pic {
+        background-position: 60%;
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width:830px ) {
+    .profile-pic {
+        background-position: 40%;
+    }
+    .profile-pic{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 .me{
