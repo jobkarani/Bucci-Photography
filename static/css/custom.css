@@ -654,6 +654,9 @@ label{
         background-position: 60%;
         height: 50vh;
     }
+    .elfsight-app-419a2fc6-40fb-4032-b36d-635c632829d5{
+        margin-right: 60%;
+    }
 }
 
 @media only screen and (max-width:830px ) {
@@ -666,6 +669,9 @@ label{
         height: auto;
         margin-left: 0;
         margin-right: 0;
+    }
+    .elfsight-app-419a2fc6-40fb-4032-b36d-635c632829d5{
+        margin-right: 60%;
     }
 }
 
@@ -748,7 +754,7 @@ footer {
     }
 
     .foot{
-        margin-left: 23%;
+        margin-left: 5%;
         margin-top: 3%;
     }
 
