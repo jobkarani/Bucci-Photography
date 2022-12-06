@@ -96,11 +96,11 @@ TEMPLATES = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME':config('DB_NAME'),
-        'USER':config('DB_USER'),
-        'PASSWORD':config('DB_PASSWORD'),
-        'HOST': config('DB_HOST'),
-        'PORT': config('DB_PORT'),
+        'NAME':'railway',
+        'USER':'postgres',
+        'PASSWORD':'yIt3g47P6aWEiaXOqtXo',
+        'HOST':'containers-us-west-127.railway.app',
+        'PORT':'7935',
     }
 }
 
