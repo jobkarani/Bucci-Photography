@@ -32,8 +32,7 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = ['*', 'https://buccifilms.up.railway.app/']
 
-CSRF_TRUSTED_ORIGINS = ['https://buccifilms.up.railway.app/']
-
+CSRF_TRUSTED_ORIGINS = ['https://buccifilms.up.railway.app']
 # ALLOWED_HOSTS = ['*']
 
 # ALLOWED_HOSTS = ['198.211.99.20', 'localhost', '127.0.0.1']
@@ -98,15 +97,14 @@ TEMPLATES = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME':config('DB_NAME'),
-        'USER':config('DB_USER'),
-        'PASSWORD':config('DB_PASSWORD'),
-        'HOST': config('DB_HOST'),
-        'PORT': config('DB_PORT'),
+        # 'NAME': os.path.join(BASE_DIR, 'db.postgresql'),
+        'NAME':'railway',
+        'USER':'postgres',
+        'PASSWORD':'yIt3g47P6aWEiaXOqtXo',
+        'HOST': 'containers-us-west-127.railway.app',
+        'PORT': '7935',
     }
 }
-
-
 
 DATABASES['default'].update(db_from_env)
 # DATABASES['default'] = dj_database_url.config()
