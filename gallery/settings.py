@@ -106,6 +106,8 @@ DATABASES = {
     }
 }
 
+
+
 DATABASES['default'].update(db_from_env)
 # DATABASES['default'] = dj_database_url.config()
 
