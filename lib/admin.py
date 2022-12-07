@@ -9,3 +9,4 @@ admin.site.register(Technique)
 admin.site.register(Location)
 admin.site.register(Category)
 admin.site.register(Image)
+
