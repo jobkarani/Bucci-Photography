@@ -30,7 +30,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 # DEBUG = True
 
-CSRF_TRUSTED_ORIGINS = ['https://bucciphotography.up.railway.app/']
+CSRF_TRUSTED_ORIGINS = ['https://bucciphotography.up.railway.app']
 
 ALLOWED_HOSTS = ['*', 'https://bucciphotography.up.railway.app/']
 
