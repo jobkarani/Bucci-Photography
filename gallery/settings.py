@@ -32,7 +32,7 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS=['bucciphography.up.railway.app', 'https://bucciphography.up.railway.app/admin']
 
-CSRF_TRUSTED_ORIGINS = ['https://bucciphography.up.railway.app/']
+CSRF_TRUSTED_ORIGINS = ['https://bucciphography.up.railway.app']
 
 # ALLOWED_HOSTS = ['*']
 
