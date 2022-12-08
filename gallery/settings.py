@@ -32,7 +32,7 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 CSRF_TRUSTED_ORIGINS = ['https://bucciphotography.up.railway.app']
 
-ALLOWED_HOSTS = ['*', 'https://bucciphotography.up.railway.app/']
+ALLOWED_HOSTS = ['*', 'bucciphotography.up.railway.app/']
 
 # ALLOWED_HOSTS = ['*']
 
